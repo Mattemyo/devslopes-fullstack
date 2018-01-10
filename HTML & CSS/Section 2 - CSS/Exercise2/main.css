@@ -1,0 +1,22 @@
+li {
+  color: green;
+}
+ul > li {
+  color: red;
+}
+
+div.parent > h2 {
+  color: orange;
+}
+h2 {
+  color: green;
+}
+h1,
+h3,
+h4,
+p {
+  color: lightblue;
+}
+div h3 {
+  color: darkgoldenrod;
+}
