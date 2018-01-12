@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Percentage Calculator</title>
+</head>
+
+<body>
+    <h1>Percentage Calculators</h1>
+
+    <select name="types" id="types">
+        <option value="zero" selected>X is what % of Y?</option>
+        <option value="one">X is Y% of what?</option>
+        <option value="two">What % of X is Y?</option>
+        <option value="three">X% of what is Y?</option>
+        <option value="four">Y% of X is what?</option>
+    </select>
+
+
+    <div class="zero">
+
+        <p>X is what % of Y?</p>
+        <hr>
+        <form>
+            <input type="number" class="num1" required> is what % of
+            <input type="number" class="num2" required>?
+            <br>
+            <br>
+            <input type="submit" value="Calculate">
+
+        </form>
+        <h3 class="result">Result:
+            <span></span>
+        </h3>
+    </div>
+    <div class="one">
+
+        <p>X is Y% of what?</p>
+        <hr>
+        <form>
+            <input type="number" class="num1" required> is
+            <input type="number" class="num2" required>% of what?
+            <br>
+            <br>
+            <input type="submit" value="Calculate">
+
+        </form>
+        <h3 class="result">Result:
+            <span></span>
+        </h3>
+    </div>
+    <div class="two">
+
+        <p>What % of X is Y?</p>
+        <hr>
+        <form>
+            What % of
+            <input type="number" class="num1" required> is
+            <input type="number" class="num2" required>?
+            <br>
+            <br>
+            <input type="submit" value="Calculate">
+
+        </form>
+        <h3 class="result">Result:
+            <span></span>
+        </h3>
+    </div>
+    <div class="three">
+
+        <p>X% of what is Y?</p>
+        <hr>
+        <form>
+            <input type="number" class="num1" required> of what is
+            <input type="number" class="num2" required>?
+            <br>
+            <br>
+            <input type="submit" value="Calculate">
+
+        </form>
+        <h3 class="result">Result:
+            <span></span>
+        </h3>
+    </div>
+    <div class="four">
+
+        <p>Y% of X is what?</p>
+        <hr>
+        <form>
+            <input type="number" class="num1" required> % of
+            <input type="number" class="num2" required> is what?
+            <br>
+            <br>
+            <input type="submit" value="Calculate">
+
+        </form>
+        <h3 class="result">Result:
+            <span></span>
+        </h3>
+    </div>
+
+    <script src="calc.js"></script>
+
+</body>
+
+</html>
