@@ -3,8 +3,8 @@ div.jumbotron {
   text-align: center;
 }
 div.col-md-6 img {
-    height: 300px;
-    width: auto;
+  height: 300px;
+  width: auto;
 }
 div.sectionLight {
   background: #eceeef;
@@ -14,28 +14,38 @@ div.sectionLight {
 /* Section 2 */
 
 div.sectionDark {
-    background: #cccccc;
-    padding: 2rem;
-
+  background: #cccccc;
+  padding: 2rem;
 }
 
 img[src="assets/KFS.png"].img-fluid {
-    height: 120px;
+  height: 120px;
 }
 
-
 div.coolStuffWrapper {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 button.coolStuffBtn {
-    background: red;
-    color:#fff;
-    display: block;
-    margin: -5px;
+  background: red;
+  color: #fff;
+  display: block;
+  margin: auto;
 }
 
 h5.modal-title {
-    margin: auto;
-    margin-right: 0;
+  margin: auto;
+  margin-right: 0;
+}
+
+/* ======= Third Section ======== */
+
+img.imgCenter {
+  display: block;
+  margin: auto;
+}
+button.btnCenter {
+  display: block;
+  margin: 15px auto;
+  width: 20rem;
 }
