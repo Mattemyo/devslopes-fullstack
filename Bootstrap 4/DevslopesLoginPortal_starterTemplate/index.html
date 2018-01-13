@@ -9,43 +9,49 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css">
   <link rel="stylesheet" href="main.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'/>
 </head>
 
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">SKATE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Photos</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Pants</a>
-            <a class="dropdown-item" href="#">Shirts</a>
-            <a class="dropdown-item" href="#">Apparel</a>
+<body class="signin-body">
+  <div class="container signin-container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-md-8 col-sm-12">
+        <div class="card signin-card">
+          <div class="card-body">
+            <img src="assets/DevslopesLogo.png" alt="" class="card-img-top">
+            <br>
+
+            <form class="signin-form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn signin-btn btn-lg">Sign In</button>
+              <br>
+              <br>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember me
+                  <a href="#"> Need Help?</a>
+                </label>
+              </div>
+
+
+            </form>
           </div>
-        </li>
-      </ul>
+        </div>
+        <br>
+        <a href="#" class="create-new-account">Create New Account</a>
+      </div>
+
+      <div class="col"></div>
     </div>
-  </nav>
+  </div>
+
+
 
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
     crossorigin="anonymous"></script>
