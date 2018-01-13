@@ -49,3 +49,31 @@ button.btnCenter {
   margin: 15px auto;
   width: 20rem;
 }
+
+/* ======== FOOTER ========= */
+
+img.footerImg {
+  padding: 15px;
+}
+.fa {
+    margin: 20px;
+    margin-top: 2rem;
+    transition: all 0.2s linear;
+}
+.fa:hover {
+transform: scale(1.05);
+}
+i.fa-facebook-square {
+  color: #3b5998;
+}
+i.fa-google-plus-square {
+    color: red;
+}
+i.fa-instagram {
+color: #fff;
+
+}
+
+div.socialWrapper {
+    padding-left: 30px;
+}
