@@ -148,6 +148,7 @@
     <div class="sectionLight">
 
       <div class="row">
+
         <!-- First Image -->
         <div class="col-sm-12 col-md-4">
           <div class="row">
@@ -155,7 +156,7 @@
               <img src="assets/kickflip.jpg" alt="kickflip" class="img-fluid imgCenter">
               <div class="row">
                 <div class="col-md-12">
-                  <button type="button" class="btn btn-lg btn-danger btnCenter">Kickflip</button>
+                  <button data-toggle="modal" data-target=".kf-modal-lg" type="button" class="btn btn-lg btn-danger btnCenter">Kickflip</button>
                 </div>
               </div>
             </div>
@@ -168,7 +169,7 @@
               <img src="assets/360flip.jpg" alt="kickflip" class="img-fluid imgCenter">
               <div class="row">
                 <div class="col-md-12">
-                  <button type="button" class="btn btn-lg btn-danger btnCenter">360 Flip</button>
+                  <button data-toggle="modal" data-target=".360-modal-lg" type="button" class="btn btn-lg btn-danger btnCenter">360 Flip</button>
                 </div>
               </div>
             </div>
@@ -182,74 +183,116 @@
               <img src="assets/bscrook.jpg" alt="kickflip" class="img-fluid imgCenter">
               <div class="row">
                 <div class="col-md-12">
-                  <button type="button" class="btn btn-lg btn-danger btnCenter">BS Crook</button>
+                  <button data-toggle="modal" data-target=".bs-modal-md" type="button" class="btn btn-lg btn-danger btnCenter">BS Crook</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+
       </div>
-
-
-      <!-- Cool Stuff Modal -->
-      <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <img src="assets/KFS_modal.png" alt="board" class="img-fluid">
-                  </div>
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="modalFormWrapper">
-                      <form>
-                        <div class="form-group">
-                          <label for="forName">What is you name?</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                          <label for="formEmail">Where could we send your cool content?</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
-
-
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Container -->
+      <!-- Section three -->
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-      crossorigin="anonymous"></script>
-    <!--  Always Download latest version of Boostrap and add here-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js"></script>
+
+    <!-- Cool Stuff Modal -->
+    <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <img src="assets/KFS_modal.png" alt="board" class="img-fluid">
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="modalFormWrapper">
+                    <form>
+                      <div class="form-group">
+                        <label for="forName">What is you name?</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="formEmail">Where could we send your cool content?</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- KickFlip Modal -->
+    <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+          <p>Kickflips are easy. Pop, flick, catch, land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 360 Flip Modal -->
+    <div class="modal fade 360-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/4KcMdH8qiuk?rel=0" allowfullscreen></iframe>
+          </div>
+          <p>Kickflips are easy. Pop, flick, catch, land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BS Crook Modal -->
+    <div class="modal fade bs-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/4KcMdH8qiuk?rel=0" allowfullscreen></iframe>
+          </div>
+          <p>Kickflips are easy. Pop, flick, catch, land. #BOOM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <!--  Always Download latest version of Boostrap and add here-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js"></script>
 </body>
 
 </html>
