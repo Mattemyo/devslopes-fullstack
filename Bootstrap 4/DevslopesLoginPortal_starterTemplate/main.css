@@ -1,0 +1,18 @@
+body.signin-body {
+  background: #e6f2ff;
+}
+div.container.signin-container {
+  padding-top: 5%;
+}
+div.card.signin-card {
+  padding: 40px 0px 20px;
+  background: #f4f4f4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: 0 auto;
+}
+
+form.signin-form {
+  max-width: 350px;
+  margin: auto;
+}

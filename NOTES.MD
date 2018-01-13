@@ -20,3 +20,6 @@
 
 #Form
 \* prevent default to stop form from refreshing page
+
+#Git
+\* Bitbucket, free private repositories
