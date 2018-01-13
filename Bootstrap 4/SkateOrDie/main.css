@@ -32,5 +32,10 @@ button.coolStuffBtn {
     background: red;
     color:#fff;
     display: block;
+    margin: -5px;
+}
+
+h5.modal-title {
     margin: auto;
+    margin-right: 0;
 }

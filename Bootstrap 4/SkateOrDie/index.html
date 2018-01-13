@@ -135,12 +135,66 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="coolStuffWrapper">
-            <button type="button" class="btn btn-lg coolStuffBtn">Get Cool Stuff</button>
+            <button type="button" class="btn btn-lg coolStuffBtn" data-toggle="modal" data-target="#coolStuffModal">Get Cool Stuff</button>
+
+
+
+
           </div>
         </div>
       </div>
 
       <!-- Row -->
+    </div>
+
+    <!-- Cool Stuff Modal -->
+    <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <img src="assets/KFS_modal.png" alt="board" class="img-fluid">
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="modalFormWrapper">
+                    <form>
+                      <div class="form-group">
+                        <label for="forName">What is you name?</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="formEmail">Where could we send your cool content?</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Container -->
