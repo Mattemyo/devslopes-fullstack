@@ -8,5 +8,29 @@ div.col-md-6 img {
 }
 div.sectionLight {
   background: #eceeef;
-  padding: 2em;
+  padding: 2rem;
+}
+
+/* Section 2 */
+
+div.sectionDark {
+    background: #cccccc;
+    padding: 2rem;
+
+}
+
+img[src="assets/KFS.png"].img-fluid {
+    height: 120px;
+}
+
+
+div.coolStuffWrapper {
+    margin-top: 20px;
+}
+
+button.coolStuffBtn {
+    background: red;
+    color:#fff;
+    display: block;
+    margin: auto;
 }
