@@ -85,6 +85,12 @@ body {
   color: #fff;
 }
 
+.splitter-container {
+  padding: 40px 0 50px;
+  background: #fffcfc;
+  text-align: center;
+}
+
 .home-title {
   font-size: 40px;
   font-weight: 700;
@@ -164,5 +170,80 @@ body {
 .b-video-img {
   width: 100%;
   padding: 30px 0 40px;
+}
+
+.img-item {
+  display: inline-block;
+  margin: 0 30px 40px;
+  vertical-align: middle;
+}
+
+.img-list {
+  margin: 0 -20px -40px;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: all 0.2 ease-in-out;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.buy-btn-lg {
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.buy-btn-md {
+  padding: 18px 50px;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+.btn-dark {
+  color: #f6f5f5;
+  background: #7a88a3;
+  border-color: #212630;
+}
+
+.btn-dark:hover {
+  color: #f6f5f5;
+  background: #5f6e8b;
+  border-color: #0c0e12;
+}
+
+.btn-primary {
+  color: #f6f5f5;
+  background: #cd4b30;
+  border-color: #cd4b30;
+}
+
+.btn-primary:hover {
+  color: #f6f5f5;
+  background: #a43c26;
+  border-color: #a43c26;
+}
+
+.btn-third {
+  color: #f6f5f5;
+  background: #cd4b3c;
+  border-color: #cd4b3c;
+}
+
+.btn-third:hover {
+  color: #f6f5f5;
+  background: #aa392c;
+  border-color: #aa392c;
 }
 /*# sourceMappingURL=app.css.map */
