@@ -1,4 +1,4 @@
-.center-block, .b-video-img {
+.center-block, .b-video-img, .gear-img {
   display: block;
   margin: auto;
 }
@@ -245,5 +245,23 @@ body {
   color: #f6f5f5;
   background: #aa392c;
   border-color: #aa392c;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin: 0 0 30px;
+  color: #212630;
+}
+
+.about-text {
+  margin: 0 0 50px;
+  color: #363e4e;
+  letter-spacing: -0.025em;
+}
+
+.about-container {
+  background: #f6f5f5;
+  padding: 70px 0;
+  min-height: 540px;
 }
 /*# sourceMappingURL=app.css.map */
