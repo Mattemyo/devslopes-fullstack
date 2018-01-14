@@ -4,7 +4,54 @@ body {
 }
 
 h1 {
-  color: eee;
+  color: #eee;
   font-family: Georgia, Times, serif;
+}
+
+#header {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background: #008975;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+#main-content {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#main-nav {
+  background: #00aa8d;
+  width: 100%;
+  display: block;
+  padding: 10px 0 40px;
+}
+
+#main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #eee;
+}
+
+#main-nav ul li a:hover {
+  color: red;
 }
 /*# sourceMappingURL=app.css.map */
