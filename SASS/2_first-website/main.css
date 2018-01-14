@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background: #e6f2ff;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+section {
+  background: #cc66ff;
+  color: #333;
+  width: 780px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+  z-index: -2;
+}
+
+div.thumb1 {
+  height: 120px;
+  width: 120px;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+  background: #333;
+  color: #e6f2ff;
+  margin: 0 435px -90px;
+}
+
+div.thumb2 {
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #cc66ff;
+  color: #cc66ff;
+  margin: -50px 1000px;
+}
+
+.btn-1 {
+  padding: 15px 20px;
+  border-radius: 7px;
+  background: #660060;
+  color: white;
+  border-width: 0;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.btn-1:hover {
+  background: #cc00c0;
+}
+
+.btn-2 {
+  padding: 30px;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  border-width: 0;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.btn-2:hover {
+  background: #cc00c0;
+}
+
+.btn-2:hover {
+  background: #330030;
+}
+/*# sourceMappingURL=main.css.map */

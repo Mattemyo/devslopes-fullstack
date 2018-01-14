@@ -15,11 +15,12 @@
 \* For in loop is for looking for keys in objects
 \*Good for debugging
 
-#Bind
-\* Bind, lose scope of 'this'
+#Bind \* Bind, lose scope of 'this'
 
-#Form
-\* prevent default to stop form from refreshing page
+#Form \* prevent default to stop form from refreshing page
 
-#Git
-\* Bitbucket, free private repositories
+#Git \* Bitbucket, free private repositories
+
+#SASS
+\*Smac
+\*Reference how to structure css and sass

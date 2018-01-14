@@ -1,0 +1,12 @@
+.btn-large {
+  padding: 30px 40px;
+  background: green;
+  color: white;
+}
+
+.btn-sm {
+  padding: 10px 15px;
+  background: teal;
+  color: black;
+}
+/*# sourceMappingURL=button.css.map */
