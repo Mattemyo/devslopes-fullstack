@@ -126,6 +126,43 @@ body {
   margin: 0 auto 15px;
 }
 
+#page-footer {
+  clear: both;
+  background: #212630;
+  padding: 25px 0 40px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#page-footer .footer-container {
+  padding: 0 10%;
+}
+
+#page-footer .footer-container .lego-footer {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fffcfc;
+}
+
+#page-footer .footer-container .lego-footer .footer-wrapper {
+  display: inline-block;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-right: 36px;
+  color: #fffcfc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #cd4b30;
+}
+
 .nav-header {
   padding: 0 0 10px;
   background: #fff;
