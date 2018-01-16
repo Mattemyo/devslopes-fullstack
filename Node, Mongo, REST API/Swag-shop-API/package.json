@@ -1,17 +1,17 @@
 {
-  "name": "swag-shock-api",
+  "name": "swag-shop-api",
   "version": "1.0.0",
-  "description": "talk to db",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "MM",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "mongoose": "^4.13.9"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2"
   }
 }
