@@ -1,0 +1,12 @@
+ul li.list-group-item.pc-condensed {
+  min-height: 50px;
+}
+
+ul li.list-group-item.pc-condensed a.btn {
+  float: left;
+  padding: 0;
+  top:5px;
+  font-size: 12px;
+  max-height: 80%;
+  max-width: 15px;
+}
