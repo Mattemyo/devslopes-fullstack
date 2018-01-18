@@ -3,18 +3,16 @@ import "./product.css";
 
 class Product extends Component {
   render() {
-    return (
-      <div className="card">
-        <img src="" alt="Product" className="card-img-top" />
+    return <div className="card product">
+        <img src={this.props.imgUrl} alt="Product" className="card-img-top" />
         <div className="card-body">
-          <h4 className="card-title" />
-          <p className="card-text">Price: $</p>
+          <h4 className="card-title"> {this.props.title} </h4>
+          <p className="card-text">Price: ${this.props.price}</p>
           <a href="#" className="btn btn-primary">
             Add to Wishlist
           </a>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 
