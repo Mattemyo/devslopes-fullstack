@@ -11,17 +11,33 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.state = { products: [] };
+
     //bind products
     this.loadData = this.loadData.bind(this);
+    this.productList = this.productList.bind(this);
 
     this.loadData();
   }
 
   loadData = () => {
-    http.getProducts().then(products => {
-      console.log(products);
+    const self = this;
+    http.getProducts().then(data => {
+      self.setState({ products: data });
     }),
       err => {};
+  };
+
+  productList = () => {
+    return this.state.products.map(product => {
+      return <div className="col-sm-4" key={product._id}>
+        <Product
+          title={product.title}
+          price={product.price}
+          imgUrl={product.imgUrl}
+        />
+      </div>;
+    });
   };
 
   render() {
@@ -32,26 +48,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div className="constainer App-main">
-          <div className="row">
-            <Product
-              className="col-sm-4"
-              price="4.34"
-              title="cool toy gun"
-              imgUrl="https://hips.hearstapps.com/pop.h-cdn.co/assets/cm/15/05/54ca62c3d99f0_-_waterguns-5.jpg"
-            />
-            <Product
-              className="col-sm-4"
-              price="4.34"
-              title="cool toy gun"
-              imgUrl="https://hips.hearstapps.com/pop.h-cdn.co/assets/cm/15/05/54ca62c3d99f0_-_waterguns-5.jpg"
-            />
-            <Product
-              className="col-sm-4"
-              price="4.34"
-              title="cool toy gun"
-              imgUrl="https://hips.hearstapps.com/pop.h-cdn.co/assets/cm/15/05/54ca62c3d99f0_-_waterguns-5.jpg"
-            />
-          </div>
+          <div className="row">{this.productList()}</div>
         </div>
       </div>
     );
