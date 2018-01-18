@@ -23,6 +23,7 @@ app.post('/product', function(request, response) {
     var product = new Product();
     product.title = request.body.title;
     product.price = request.body.price;
+    product.imgUrl = request.body.imgUrl;
     product.save(function(err, savedProduct) {
        if (err) {
            response.status(500).send({error:"Could not save product"});
