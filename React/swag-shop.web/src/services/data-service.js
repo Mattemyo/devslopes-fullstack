@@ -1,3 +1,10 @@
+import NotificationService, {
+  NOTIF_WISHLIST_CHANGED
+} from "./notification-service";
+import wishlist from "../wishlist/wishlist";
+
+let ns = new NotificationService();
+
 let instance = null;
 const wishList = [];
 
@@ -11,6 +18,7 @@ class DataService {
 
   addWishListItem = item => {
     wishList.push(item);
+    ns.postNotification(NOTIF_WISHLIST_CHANGED, wishList);
   };
 
   removeWishListItem = item => {
@@ -18,6 +26,8 @@ class DataService {
       const element = wishList[i];
       if (element._id === item._id) {
         wishList.splice(i, 1);
+        ns.postNotification(NOTIF_WISHLIST_CHANGED, wishList);
+
         break;
       }
     }
