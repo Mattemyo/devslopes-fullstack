@@ -3,6 +3,8 @@ import NotificationService, {
 } from "./notification-service";
 import wishlist from "../wishlist/wishlist";
 
+
+
 let ns = new NotificationService();
 
 let instance = null;
@@ -15,6 +17,16 @@ class DataService {
     }
     return instance;
   }
+
+  itemOnWishList = item => {
+    for (let i = 0; i < wishList.length; i++) {
+      const element = wishList[i];
+      if (element._id === item._id) {
+        return true;
+      }
+    }
+    return false;
+  };
 
   addWishListItem = item => {
     wishList.push(item);

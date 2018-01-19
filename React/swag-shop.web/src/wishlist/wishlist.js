@@ -7,7 +7,7 @@ import NotificationService, {
 
 import ProductCondensed from "../product-condensed/product-condensed";
 
-const ns = new NotificationService();
+let ns = new NotificationService();
 class WishList extends Component {
   constructor(props) {
     super(props);
